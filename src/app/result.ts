@@ -1,3 +1,3 @@
 export class Result {
-    result : {}
+    result : any
 }
