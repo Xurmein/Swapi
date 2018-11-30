@@ -1,0 +1,34 @@
+.container{
+    background: url('https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22085_hires.jpg') center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.topicURL{
+    float: left;
+    margin: 2em;
+    background-color: #8080808d;
+}
+
+.termURL{
+    color: black;
+}
+
+option{
+    color: white;
+}
+
+.container-results{
+    margin: auto;
+    color: aliceblue;
+    background-color: #8080808d;
+    min-height: 40vh;
+    height: fit-content;
+    width: 67vw;
+}
+
+.button{
+   margin: 2em;
+}

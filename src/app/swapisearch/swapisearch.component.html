@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="container-form">
+    <mat-form-field>
+      <div>
+        <mat-select class="topicURL" [(ngModel)]="endpoint.topicURL" required>
+          <mat-option value="films">Films</mat-option>
+          <mat-option value="people">People</mat-option>
+          <mat-option value="planets">Planets</mat-option>
+          <mat-option value="species">Species</mat-option>
+          <mat-option value="starships">Starships</mat-option>
+          <mat-option value="vehicles">Vehicles</mat-option>
+        </mat-select>
+      </div>
+      <div>
+        <input matIput type="search" class="termURL" placeholder="Search your feelings." [(ngModel)]="endpoint.termURL" required>
+      </div>
+    </mat-form-field>
+    
+   
+    <button type="submit" class="button" (click)="getResults()">You <i>know</i> it to be true.</button>
+  </div>
+  <div class="container-results" *ngIf="endpoint !== null">
+    <!-- <ol>
+      <li *ngFor="let result of results"> -->
+        {{ result }}
+      <!-- </li>
+    </ol> -->
+  </div>
+</div>
